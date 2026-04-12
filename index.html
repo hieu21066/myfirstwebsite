@@ -4,6 +4,12 @@
 
 <head>
   <title>My first website</title>
+  <meta charset="UTF-8">
+  <meta name="Description" content="Free HTML tutorial for beginners">
+  <meta name="keywords" content="HTML, tutorial, beginners">
+  <meta name="author" content="Bro Code">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<meta http-equiv="refresh" content="30">-->
 </head>
 <body style="background-color: antiquewhite;">
 <!-- Nothing will be showed-->
@@ -22,7 +28,10 @@
  </a>
  <hr>
  <a href="https://vi.wikipedia.org/wiki/L%C3%BD_Th%C6%B0%E1%BB%9Dng_Ki%E1%BB%87t">
- <img src="screen.png" height="300" width="600" alt="This is a picture" title="Computer Architecture">
+ <img src="screen.png" 
+     alt="This is a picture" 
+     title="Computer Architecture"
+     style="height: 300px; max-width: 100%; width: auto;">
  </a>
  <hr>
  <audio controls ><!-- muted autoplay loop-->
@@ -31,7 +40,7 @@
  <br>
  Hi guy! have a nice day
  <hr>
- <video controls  width="300" height="300">
+ <video controls  width="400" height="300">
     <source src="nhacc dll.mp4">
  </video>
  <hr>
@@ -71,15 +80,15 @@
     </dl>
     <hr>
     <h3>Store Hours</h3>
-    <table bgcolor="black" width="700">
+    <table bgcolor="black" style="height: 50px; max-width: 100%; width: auto;">
       <tr bgcolor="grey"> 
-         <th width="100">Sunday</th>
-         <th width="100">Monday</th>
-         <th width="100">Tuesday</th>
-         <th width="100">Wednesday</th>
-         <th width="100">Thursday</th>
-         <th width="100">Friday</th>
-         <th width="100">Saturday</th>
+         <th>Sunday</th>
+         <th>Monday</th>
+         <th>Tuesday</th>
+         <th>Wednesday</th>
+         <th>Thursday</th>
+         <th>Friday</th>
+         <th>Saturday</th>
       </tr>
       <tr bgcolor="lightgrey" align="center">
        <td>Closed</td>
@@ -98,5 +107,18 @@
       I am so happy now. The website is only for practicing to 
       improve my skills of web programming.
    </p>
+   </h1>
+
+  <div style="background-color: lightgrey; padding: 10px 10px 10px 10px;">
+    Cái hộp (div) này màu xám nhạt.
+    <p>Bên trong đoạn văn này, tôi dùng 
+       <span style="background-color: yellow;">thẻ span để tô vàng</span> 
+       một vài chữ.
+    </p>
+  </div>
+<iframe width="400" height="800" 
+        src="https://www.youtube.com/watch?v=hcw7m7Re_pE&list=RDhcw7m7Re_pE&start_radio=1" 
+        frameborder="0" allowfullscreen>
+</iframe>
 </body>
 </html>
