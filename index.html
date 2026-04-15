@@ -19,11 +19,11 @@
  <hr>
  <p style="color:#5d42f5 ">This is some apples</p>
  <hr>
- <a href="page2.html" target=_self title="This gets you to page 2">
+ <a href="page2.html" target="_blank" title="This gets you to page 2">
   This is page 2
  </a>
  <hr>
- <a href="https://www.facebook.com/?locale=vi_VN" target=_self title="hieu's facebook">
+ <a href="https://www.facebook.com/?locale=vi_VN" target="_blank" title="hieu's facebook">
     my face
  </a>
  <hr>
@@ -74,9 +74,9 @@
     <dt>HTML</dt>
     <dd>This adds structure to a webpage</dd>
     <dt>CSS</dt>
-    <dd>This adds style to a webpage</dt>
+    <dd>This adds style to a webpage</dd>
     <dt>JS</dt>
-    <dd>This adds functionality to a webpage</dt>
+    <dd>This adds functionality to a webpage</dd>
     </dl>
     <hr>
     <h3>Store Hours</h3>
@@ -101,13 +101,11 @@
       </tr>
     </table>
     <hr>
-   <p style="backgound-color:black ; color: rgb(255, 0, 247)">
+   <p style="background-color:black ; color: rgb(255, 0, 247)">
       Hi everyone! 
       To be honest, This is my first website I have ever created.
-      I am so happy now. The website is only for practicing to 
-      improve my skills of web programming.
+      The website is only for practicing to improve my skills of web programming.
    </p>
-   </h1>
 
   <div style="background-color: lightgrey; padding: 10px 10px 10px 10px;">
     Cái hộp (div) này màu xám nhạt.
@@ -116,9 +114,23 @@
        một vài chữ.
     </p>
   </div>
-<iframe width="400" height="800" 
-        src="https://www.youtube.com/watch?v=hcw7m7Re_pE&list=RDhcw7m7Re_pE&start_radio=1" 
-        frameborder="0" allowfullscreen>
+<br>
+<a href="https://www.facebook.com/daihoctantrao.edu.vn?locale=vi_VN" target="_blank" title="Tan Trao University">
+  <button style="background-color: #333333; color:#00FF00; border-radius:5px; width: 300px; height: 100px; cursor: pointer; font-size:40px;">
+    click here
+  </button>
+</a>
+<hr>
+<button onclick="doSomething()"> click here to change</button>
+<p id="test">Hello</p>
+<script>
+ let isHello = true;
+function doSomething(){
+  isHello = !isHello;
+  document.getElementById("test").innerHTML = isHello ? "Hello" : "Goodbye";
+}
+</script>
+<iframe style="border:1" src="page2.html" width="400" height="500">
 </iframe>
 </body>
 </html>
